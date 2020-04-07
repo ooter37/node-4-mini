@@ -29,11 +29,7 @@ class App extends Component {
   createMessage() {
     const {username, message} = this.state
     const newMessage = {username, message}
-    axios.post('/api/message', newMessage).then(res => {
-      this.setState({
-        allMessages: res.data
-      })
-    })
+    axios.post('/api/message', newMessage)
   }
   
 

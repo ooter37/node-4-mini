@@ -12,11 +12,7 @@ export default class HistoryModal extends Component {
 
   
   componentDidMount() {
-    axios.get('/api/messages/history').then(res => {
-      this.setState({
-        historyMessages: res.data
-      })
-    })
+    // create request here
   }
   
 
